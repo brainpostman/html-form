@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Annual Chicken-lovers' Society Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1 id="title">Annual Chicken-lovers' Society Survey Form</h1>
+<p id="description">Welcome to all juicy chicken meat lovers! Please fill out our survey below!</p>
+<form id="survey-form">
+    <fieldset id="1">
+        <label class="fieldset-id-1" for="name" id="name-label">
+            Name:
+            <input class="input" id="name" type="text" placeholder="Enter your name" required>
+        </label>
+        <label class="fieldset-id-1" for="email" id="email-label">
+            Email:
+            <input class="input" id="email" type="email" placeholder="Enter your email" required>
+        </label>
+        <label class="fieldset-id-1" for="number" id="number-label">
+            Age (years):
+            <input class="input" id="number" type="number" placeholder="You should be at least 16 to participate" min="16" max="120">
+        </label>
+        <label for="dropdown" id="dropdown-label">
+            How did you hear about the Chicken-lovers' Society?
+            <select class="input" id="dropdown" name="referrer">
+                <option value="0">(select one)</option>
+                <option value="1">Saw an ad on a billboard</option>
+                <option value="2">Saw an ad on TV</option>
+                <option value="3">Saw an ad online</option>
+                <option value="4">From an acquaintance</option>
+                <option value="5">Professional necessity</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset id="2">
+        What kind of cooking experience do you have?
+        <label for="amateur">
+            <input class="inline" type="radio" id="amateur" name="cooking-experience" value="amateur" checked> Amateur
+        </label>
+        <label for="homecook">
+            <input class="inline" type="radio" id="homecook" name="cooking-experience" value="homecook"> Homecook
+        </label>
+        <label for="professional">
+            <input class="inline" type="radio" id="professional" name="cooking-experience" value="professional"> Professional
+        </label>
+    </fieldset>
+    <fieldset id="3">
+        Please select your preferred method of cooking chicken:
+        <label class="input" for="boiled">
+            <input class="inline" type="checkbox" value="boiled" id="boiled"> Boiled
+        </label>
+        <label for="braised">
+            <input class="inline" type="checkbox" value="braised" id="braised"> Braised
+        </label>
+        <label for="fried">
+            <input class="inline" type="checkbox" value="fried" id="fried"> Fried
+        </label>
+        <label for="pan-fried">
+            <input class="inline" type="checkbox" value="pan-fried" id="pan-fried"> Pan-fried
+        </label>
+        <label for="other">
+            <input class="inline" type="checkbox" value="other" id="other"> Other
+        </label>
+        <label class="input">
+            If you prefer different methods of cooking chicken not represented above, you can share them here:
+            <textarea rows="3" cols="30">
+            </textarea>
+        </label>
+        <input type="submit" id="submit">
+    </fieldset>
+</form>
+</body>
+</html>
